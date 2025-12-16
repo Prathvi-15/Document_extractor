@@ -43,7 +43,7 @@ techniques to identify and extract relevant fields with confidence scores.
 ```bash
 python -m venv venv
 
-**Activate the Virtual Environment**
+## Activate the Virtual Environment
 
 Windows:
 ```bash
@@ -55,19 +55,19 @@ Linux / macOS
 ```bash
 source venv/bin/activate
 
-###  3. Install Project Dependencies
+## 3. Install Project Dependencies
 pip install -r requirements.txt
 
-### Running the Application
+## Running the Application
 Start the FastAPI Server
 ```bash
 uvicorn src.app.api:app --reload
 
-### Open the Application in Browser
+## Open the Application in Browser
 ```bash
 http://127.0.0.1:8000
 
-**How It Works**
+## How It Works
 - The user uploads an image or PDF document through the web interface.
 - The document is preprocessed to improve OCR accuracy.
 - OCR is applied to extract raw text from the document.
@@ -103,5 +103,6 @@ pytest
 - ERP system integration via APIs
 - Government verification APIs (GST / Aadhaar validation)
 - Machine learning-based entity extraction
+
 
 
