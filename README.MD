@@ -35,7 +35,7 @@ techniques to identify and extract relevant fields with confidence scores.
 
 ## Environment Setup
 
-##1. Install Tesseract OCR
+## 1. Install Tesseract OCR
 - Download and install Tesseract OCR
 - Add Tesseract installation directory to system PATH
 
@@ -103,4 +103,5 @@ pytest
 - ERP system integration via APIs
 - Government verification APIs (GST / Aadhaar validation)
 - Machine learning-based entity extraction
+
 
