@@ -54,7 +54,7 @@ venv\Scripts\activate
 Linux / macOS
 ```bash
 source venv/bin/activate
-
+---
 ## 3. Install Project Dependencies
 pip install -r requirements.txt
 
@@ -66,7 +66,7 @@ uvicorn src.app.api:app --reload
 ## Open the Application in Browser
 ```bash
 http://127.0.0.1:8000
-
+---
 ## How It Works
 - The user uploads an image or PDF document through the web interface.
 - The document is preprocessed to improve OCR accuracy.
@@ -103,6 +103,7 @@ pytest
 - ERP system integration via APIs
 - Government verification APIs (GST / Aadhaar validation)
 - Machine learning-based entity extraction
+
 
 
 
