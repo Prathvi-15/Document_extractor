@@ -43,82 +43,63 @@ techniques to identify and extract relevant fields with confidence scores.
 ```bash
 python -m venv venv
 
-Activate the virtual environment:
+**Activate the Virtual Environment**
 
-Windows
-
+Windows:
+```bash
 venv\Scripts\activate
 
 
-Linux / macOS
 
+Linux / macOS
+```bash
 source venv/bin/activate
 
-3. Install Project Dependencies
+###  3. Install Project Dependencies
 pip install -r requirements.txt
 
-Running the Application
+### Running the Application
 Start the FastAPI Server
+```bash
 uvicorn src.app.api:app --reload
 
-Open the Application in Browser
+### Open the Application in Browser
+```bash
 http://127.0.0.1:8000
 
-How It Works
+**How It Works**
+- The user uploads an image or PDF document through the web interface.
+- The document is preprocessed to improve OCR accuracy.
+- OCR is applied to extract raw text from the document.
+- Rule-based and pattern-based logic extracts the required fields.
+- Each extracted field is assigned a confidence score.
+- The extracted results are displayed in a professional web interface.
 
-User uploads an image or PDF document.
-
-The document is preprocessed for better OCR accuracy.
-
-OCR is applied to extract raw text.
-
-Rule-based and pattern-based logic extracts required fields.
-
-Each extracted field is assigned a confidence score.
-
-Results are displayed in a professional web interface.
-
-Sample Data
-
+**Sample Data**
 Sample documents used for testing and demonstration are available in:
 
 data/samples/
 
-Output Format
 
-Extracted fields displayed in table format
+**Output Format**
+- Extracted fields displayed in a structured table format
+- Confidence score provided for each extracted field
+- Graceful handling of unreadable or low-quality documents
 
-Confidence score for each field
-
-Graceful handling of unreadable or low-quality documents
-
-Unit Testing
-
+**Unit Testing**
 Basic unit tests are implemented using pytest to validate core extraction logic.
 
 Run tests using:
-
+```bash
 pytest
 
-Limitations
+**Limitations**
+- OCR accuracy depends on document image quality
+- Handwritten documents are not supported
+- Multi-page PDF processing is limited to the first page
 
-OCR accuracy depends on document quality.
-
-Handwritten documents are not supported.
-
-Multi-page PDF processing is limited to the first page.
-
-Future Enhancements
-
-Multi-page PDF support
-
-ERP system integration via APIs
-
-Government verification APIs (GST / Aadhaar validation)
-
-Machine learning-based entity extraction
-
-Conclusion
-
-This project demonstrates an end-to-end document extraction pipeline combining OCR,
-backend APIs, and a clean frontend UI, suitable for real-world ERP and automation use cases.
+**Future Enhancements**
+- Multi-page PDF support
+- ERP system integration via APIs
+- Government verification APIs (GST / Aadhaar validation)
+- Machine learning-based entity extraction
