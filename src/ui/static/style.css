@@ -1,0 +1,124 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PAGE */
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* CARD */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADER */
+h1 {
+    text-align: center;
+    font-size: 34px;
+    color: #0f172a;
+    margin-bottom: 35px;
+}
+
+/* 🔥 CENTER FILE INPUT + BUTTON */
+.upload-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 45px;
+}
+
+/* FILE INPUT */
+input[type="file"] {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: #f8fafc;
+    cursor: pointer;
+}
+
+/* BUTTON */
+button {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #1e40af, #1e3a8a);
+    transform: translateY(-1px);
+}
+
+/* TABLE TITLE */
+h2 {
+    font-size: 22px;
+    color: #1f2937;
+    margin-bottom: 15px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead {
+    background: #f1f5f9;
+}
+
+th {
+    padding: 14px;
+    text-align: left;
+    font-size: 15px;
+    color: #0f172a;
+}
+
+td {
+    padding: 14px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 15px;
+}
+
+/* CONFIDENCE COLORS */
+.high {
+    color: #16a34a;
+    font-weight: 700;
+}
+
+.medium {
+    color: #f59e0b;
+    font-weight: 700;
+}
+
+.low {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+/* EMPTY MESSAGE */
+td[colspan="3"] {
+    text-align: center;
+    color: #6b7280;
+    padding: 20px;
+}

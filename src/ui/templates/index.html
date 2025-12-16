@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Extractor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Document Extractor</h1>
+
+    <!-- CENTERED UPLOAD SECTION -->
+    <div class="upload-section">
+        <input type="file" id="fileInput">
+        <button onclick="extract()">Extract</button>
+    </div>
+
+    <h2>Extracted Fields</h2>
+
+    <table id="resultTable">
+        <thead>
+            <tr>
+                <th>Field</th>
+                <th>Value</th>
+                <th>Confidence</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3">Upload a document to extract fields</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
