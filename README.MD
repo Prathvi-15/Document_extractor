@@ -43,7 +43,7 @@ techniques to identify and extract relevant fields with confidence scores.
 ```bash
 python -m venv venv
 
-Activate the Virtual Environment
+Activate the virtual environment:
 
 Windows
 
@@ -54,66 +54,72 @@ Linux / macOS
 
 source venv/bin/activate
 
-3. Install Project Dependencies
+📦 3. Install Project Dependencies
+
+Install required Python libraries:
+
 pip install -r requirements.txt
 
-Running the Application
-Start the FastAPI Server
+🚀 4. Run the Application
+
+Start the FastAPI server:
+
 uvicorn src.app.api:app --reload
 
-Open the Application in Browser
+🌐 5. Access the Application
+
+Open your browser and go to:
+
 http://127.0.0.1:8000
 
-How It Works
+🔍 6. How It Works
 
-The user uploads an image or PDF document through the web interface.
+User uploads an image or PDF document
 
-The document is preprocessed to improve OCR accuracy.
+Document preprocessing is applied
 
-OCR is applied to extract raw text from the document.
+OCR extracts raw text
 
-Rule-based and pattern-based logic extracts the required fields.
+Rule-based logic extracts required fields
 
-Each extracted field is assigned a confidence score.
+Confidence scores are calculated
 
-The extracted results are displayed in a professional web interface.
+Results are displayed in the UI
 
-Sample Data
+📂 7. Sample Data
 
-Sample documents used for testing and demonstration are available in:
+Sample documents for testing are available in:
 
 data/samples/
 
-Output Format
+📊 8. Output Format
 
-Extracted fields displayed in a structured table format
+Structured table of extracted fields
 
-Confidence score provided for each extracted field
+Confidence score for each field
 
-Graceful handling of unreadable or low-quality documents
+Graceful handling of low-quality documents
 
-Unit Testing
+🧪 9. Unit Testing
 
-Basic unit tests are implemented using pytest to validate core extraction logic.
-
-Run tests using:
+Run unit tests using pytest:
 
 pytest
 
-Limitations
+⚠️ 10. Limitations
 
-OCR accuracy depends on document image quality
+OCR accuracy depends on image quality
 
 Handwritten documents are not supported
 
-Multi-page PDF processing is limited to the first page
+Only first page of PDF is processed
 
-Future Enhancements
+🚧 11. Future Enhancements
 
 Multi-page PDF support
 
-ERP system integration via APIs
+ERP integration APIs
 
-Government verification APIs (GST / Aadhaar validation)
+Government verification APIs
 
-Machine learning-based entity extraction
+ML-based entity extraction
